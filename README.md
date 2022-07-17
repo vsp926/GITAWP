@@ -1,0 +1,2 @@
+# GITWP
+Python Practice scripts 
