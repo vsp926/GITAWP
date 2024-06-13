@@ -1,4 +1,5 @@
 from random import randint
+import pdb
 
 
 class InvalidInputException(Exception):
@@ -20,10 +21,11 @@ def GetUserInput():
                 verify_result(first_number, last_number, user_guess)
             else:
                 raise InvalidInputException("Your guess should be between the first number and last number")
-
     except InvalidInputException as e:
         print(e)
         return None, None, None
+    except Exception as e:
+        print("Invalid Input, Enter only Whole Number")
 
 
 def verify_result(first_number, last_number, user_guess):
